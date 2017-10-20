@@ -1,6 +1,7 @@
 package block;
 
 import block.io.*;
+import block.iot.*;
 import block.math.AddBlockFactory;
 import block.math.DivideByBlockFactory;
 import block.math.MultiplyBlockFactory;
@@ -42,6 +43,12 @@ public class IBlockFactoryEnum {
                 new MailTextBlockFactory(),
                 new ReadBytesBlockFactory(),
                 new WGetBlockFactory(),
+                // IOT
+                new StockAskBlockFactory(),
+                new StockBidBlockFactory(),
+                new WeatherPressureBlockFactory(),
+                new WeatherTemperatureBlockFactory(),
+                new WeatherHumidityBlockFactory(),
                 // LOGIC
                 new AndBlockFactory(),
                 new EqualsBlockFactory(),
