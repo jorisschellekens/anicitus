@@ -15,20 +15,10 @@ import block.logic.AndBlockFactory;
 import block.logic.EqualsBlockFactory;
 import block.logic.GreaterThanBlockFactory;
 import block.logic.NotBlockFactory;
-import block.pdf.ClosePDFBlockFactory;
-import block.pdf.MergeDocumentsBlockFactory;
-import block.pdf.ModifyPDFBlockFactory;
-import block.pdf.ReadPDFBlockFactory;
-import block.pdf.WatermarkBlockFactory;
 import block.primitive.DateBlockFactory;
 import block.primitive.NumberBlockFactory;
 import block.logic.OrBlockFactory;
 import block.logic.SmallerThanBlockFactory;
-import block.pdf.CountPagesBlockFactory;
-import block.pdf.ExtractAuthorBlockFactory;
-import block.pdf.ExtractCreatorBlockFactory;
-import block.pdf.ExtractProducerBlockFactory;
-import block.pdf.ExtractTextBlockFactory;
 import block.primitive.RandomNumberBlockFactory;
 import block.primitive.ToNumberBlockFactory;
 import block.string.*;
@@ -72,17 +62,6 @@ public class IBlockFactoryEnum {
                 new DuplicateInputBlockFactory(),
                 // NLP
                 new DetermineLanguageBlockFactory(),
-                // PDF
-                new ClosePDFBlockFactory(),
-                new CountPagesBlockFactory(),
-                new ExtractAuthorBlockFactory(),
-                new ExtractCreatorBlockFactory(),
-                new ExtractProducerBlockFactory(),
-                new ExtractTextBlockFactory(),
-                new MergeDocumentsBlockFactory(),
-                new ModifyPDFBlockFactory(),
-                new ReadPDFBlockFactory(),
-                new WatermarkBlockFactory(),
                 // PRIMITVE
                 new DateBlockFactory(),
                 new NumberBlockFactory(),
