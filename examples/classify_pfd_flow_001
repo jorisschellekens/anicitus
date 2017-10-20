@@ -1,0 +1,280 @@
+[
+  {
+    "args": [],
+    "blockType": "AlertBlock",
+    "x": 1590,
+    "y": 170,
+    "ID": 7,
+    "connections": []
+  },
+  {
+    "args": [
+      "ISC"
+    ],
+    "blockType": "StringBlock",
+    "x": 1140,
+    "y": 360,
+    "ID": 11,
+    "connections": [
+      {
+        "sourceID": 11,
+        "sourcePort": 0,
+        "targetID": 10,
+        "targetPort": 2
+      }
+    ]
+  },
+  {
+    "args": [
+      "ISB"
+    ],
+    "blockType": "StringBlock",
+    "x": 1140,
+    "y": 300,
+    "ID": 2,
+    "connections": [
+      {
+        "sourceID": 2,
+        "sourcePort": 0,
+        "targetID": 10,
+        "targetPort": 1
+      }
+    ]
+  },
+  {
+    "args": [],
+    "blockType": "ExtractTextBlock",
+    "x": 590,
+    "y": 140,
+    "ID": 5,
+    "connections": [
+      {
+        "sourceID": 5,
+        "sourcePort": 0,
+        "targetID": 3,
+        "targetPort": 0
+      }
+    ]
+  },
+  {
+    "args": [],
+    "blockType": "DuplicateInputBlock",
+    "x": 780,
+    "y": 140,
+    "ID": 3,
+    "connections": [
+      {
+        "sourceID": 3,
+        "sourcePort": 0,
+        "targetID": 14,
+        "targetPort": 0
+      },
+      {
+        "sourceID": 3,
+        "sourcePort": 1,
+        "targetID": 6,
+        "targetPort": 0
+      }
+    ]
+  },
+  {
+    "args": [],
+    "blockType": "FileSelectBlock",
+    "x": 190,
+    "y": 140,
+    "ID": 15,
+    "connections": [
+      {
+        "sourceID": 15,
+        "sourcePort": 0,
+        "targetID": 0,
+        "targetPort": 0
+      }
+    ]
+  },
+  {
+    "args": [],
+    "blockType": "ToUpperBlock",
+    "x": 960,
+    "y": 90,
+    "ID": 14,
+    "connections": [
+      {
+        "sourceID": 14,
+        "sourcePort": 0,
+        "targetID": 8,
+        "targetPort": 0
+      }
+    ]
+  },
+  {
+    "args": [
+      "SALES"
+    ],
+    "blockType": "StringBlock",
+    "x": 1280,
+    "y": 170,
+    "ID": 4,
+    "connections": [
+      {
+        "sourceID": 4,
+        "sourcePort": 0,
+        "targetID": 12,
+        "targetPort": 1
+      }
+    ]
+  },
+  {
+    "args": [],
+    "blockType": "DuplicateInputBlock",
+    "x": 1280,
+    "y": 110,
+    "ID": 9,
+    "connections": [
+      {
+        "sourceID": 9,
+        "sourcePort": 0,
+        "targetID": 16,
+        "targetPort": 0
+      },
+      {
+        "sourceID": 9,
+        "sourcePort": 1,
+        "targetID": 12,
+        "targetPort": 0
+      }
+    ]
+  },
+  {
+    "args": [],
+    "blockType": "BeepBlock",
+    "x": 1450,
+    "y": 110,
+    "ID": 16,
+    "connections": []
+  },
+  {
+    "args": [],
+    "blockType": "IfBlock",
+    "x": 1310,
+    "y": 240,
+    "ID": 10,
+    "connections": [
+      {
+        "sourceID": 10,
+        "sourcePort": 0,
+        "targetID": 12,
+        "targetPort": 2
+      }
+    ]
+  },
+  {
+    "args": [],
+    "blockType": "IfBlock",
+    "x": 1450,
+    "y": 170,
+    "ID": 12,
+    "connections": [
+      {
+        "sourceID": 12,
+        "sourcePort": 0,
+        "targetID": 7,
+        "targetPort": 0
+      }
+    ]
+  },
+  {
+    "args": [],
+    "blockType": "DetermineLanguageBlock",
+    "x": 960,
+    "y": 210,
+    "ID": 6,
+    "connections": [
+      {
+        "sourceID": 6,
+        "sourcePort": 0,
+        "targetID": 13,
+        "targetPort": 0
+      }
+    ]
+  },
+  {
+    "args": [],
+    "blockType": "ReadPDFBlock",
+    "x": 390,
+    "y": 140,
+    "ID": 0,
+    "connections": [
+      {
+        "sourceID": 0,
+        "sourcePort": 0,
+        "targetID": 5,
+        "targetPort": 0
+      }
+    ]
+  },
+  {
+    "args": [],
+    "blockType": "ContainsBlock",
+    "x": 1140,
+    "y": 110,
+    "ID": 8,
+    "connections": [
+      {
+        "sourceID": 8,
+        "sourcePort": 0,
+        "targetID": 9,
+        "targetPort": 0
+      }
+    ]
+  },
+  {
+    "args": [
+      "INVOICE"
+    ],
+    "blockType": "StringBlock",
+    "x": 960,
+    "y": 150,
+    "ID": 1,
+    "connections": [
+      {
+        "sourceID": 1,
+        "sourcePort": 0,
+        "targetID": 8,
+        "targetPort": 1
+      }
+    ]
+  },
+  {
+    "args": [],
+    "blockType": "EqualsBlock",
+    "x": 1140,
+    "y": 240,
+    "ID": 13,
+    "connections": [
+      {
+        "sourceID": 13,
+        "sourcePort": 0,
+        "targetID": 10,
+        "targetPort": 0
+      }
+    ]
+  },
+  {
+    "args": [
+      "NL"
+    ],
+    "blockType": "StringBlock",
+    "x": 960,
+    "y": 270,
+    "ID": 17,
+    "connections": [
+      {
+        "sourceID": 17,
+        "sourcePort": 0,
+        "targetID": 13,
+        "targetPort": 1
+      }
+    ]
+  }
+]

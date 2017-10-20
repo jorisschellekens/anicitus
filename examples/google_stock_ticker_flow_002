@@ -1,0 +1,136 @@
+[
+  {
+    "args": [],
+    "blockType": "WGetBlock",
+    "x": 470,
+    "y": 100,
+    "ID": 0,
+    "connections": [
+      {
+        "sourceID": 0,
+        "sourcePort": 0,
+        "targetID": 7,
+        "targetPort": 0
+      }
+    ]
+  },
+  {
+    "args": [
+      " : "
+    ],
+    "blockType": "StringBlock",
+    "x": 670,
+    "y": 110,
+    "ID": 8,
+    "connections": [
+      {
+        "sourceID": 8,
+        "sourcePort": 0,
+        "targetID": 3,
+        "targetPort": 1
+      }
+    ]
+  },
+  {
+    "args": [
+      "C:\\Users\\Joris Schellekens\\Desktop\\log_goog_stock.txt"
+    ],
+    "blockType": "FileOutputBlock",
+    "x": 990,
+    "y": 40,
+    "ID": 6,
+    "connections": [
+      {
+        "sourceID": 6,
+        "sourcePort": 0,
+        "targetID": 5,
+        "targetPort": 0
+      }
+    ]
+  },
+  {
+    "args": [],
+    "blockType": "ConcatenateBlock",
+    "x": 850,
+    "y": 100,
+    "ID": 3,
+    "connections": [
+      {
+        "sourceID": 3,
+        "sourcePort": 0,
+        "targetID": 4,
+        "targetPort": 0
+      }
+    ]
+  },
+  {
+    "args": [],
+    "blockType": "AppendToFileBlock",
+    "x": 1180,
+    "y": 100,
+    "ID": 5,
+    "connections": []
+  },
+  {
+    "args": [],
+    "blockType": "ToNumberBlock",
+    "x": 660,
+    "y": 220,
+    "ID": 7,
+    "connections": [
+      {
+        "sourceID": 7,
+        "sourcePort": 0,
+        "targetID": 4,
+        "targetPort": 1
+      }
+    ]
+  },
+  {
+    "args": [],
+    "blockType": "ConcatenateBlock",
+    "x": 990,
+    "y": 100,
+    "ID": 4,
+    "connections": [
+      {
+        "sourceID": 4,
+        "sourcePort": 0,
+        "targetID": 5,
+        "targetPort": 1
+      }
+    ]
+  },
+  {
+    "args": [],
+    "blockType": "DateBlock",
+    "x": 670,
+    "y": 40,
+    "ID": 2,
+    "connections": [
+      {
+        "sourceID": 2,
+        "sourcePort": 0,
+        "targetID": 3,
+        "targetPort": 0
+      }
+    ]
+  },
+  {
+    "args": [
+      "http://download.finance.yahoo.com/d/quotes.csv?s\u003dGOOG\u0026f\u003da"
+    ],
+    "blockType": "StringBlock",
+    "x": 50,
+    "y": 100,
+    "ID": 1,
+    "connections": [
+      {
+        "sourceID": 1,
+        "sourcePort": 0,
+        "targetID": 0,
+        "targetPort": 0
+      }
+    ]
+  }
+]
