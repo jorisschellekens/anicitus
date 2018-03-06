@@ -1,4 +1,4 @@
-# anicitus : a picture is worth a thousand lines of code
+# close caribou
 
 This program implements a visual workflow builder, enabling quick proof-of-concepts to be built with off-the-shelf functionality.
 
